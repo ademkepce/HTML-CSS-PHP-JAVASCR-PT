@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>İletisim</title>
+    <meta charset="utf-8">  
+    <link rel="stylesheet" type="text/css" href="Iletisim.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script>
+            function FormKontrol()
+            {
+                var mail= document.getElementById("mail").value;
+                var adi= document.getElementById("ad").value;
+                var soyadi= document.getElementById("soyad").value;
+                var yas=document.getElementById("yas").value;
+                var sebep=document.getElementById("text").value;
+                var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+                
+                if(reg.test(mail) ==false)
+                {
+                    alert("Lütfen geçerli bir e-posta adresi giriniz.");
+                }
+                else if(mail=="")
+                {
+                     alert("Lütfen bir mail adresi giriniz.");
+                } 
+                else if(adi=="")
+                {
+                    alert("Lütfen adınızı giriniz.");
+                }       
+                else if(soyadi=="")
+                {
+                    alert("Lütfen soyadınızı giriniz.");
+                }
+
+                else
+                {
+                    document.writeln(mail+"<br>"+adi+" "+soyadi+"<br>"+yas+"<br>"+sebep);
+                }
+            }
+    </script>
+   
+</head>
+
+ <body>
+    <div class="nav-bar ">
+        <nav class="nav-bar nav">
+            <a class="text-decoration-none" href="index.html">Anasayfa</a>
+        </nav>
+    </div>
+     <div class="Baslik">
+         <h2>Bizimle İletişime Geçin</h2>
+         <p>Lütfen bilgilerinizi eksiksiz doldurmaya çalışınız.</p>
+     </div>
+     
+    <form class="Form">
+        <table >
+            <tr>
+                <td>Ad :</td>
+                <td><input type="text" name="ad" id="ad" ></td>
+            </tr>
+            <tr>
+                <td>Soyad :</td>
+                <td><input type="text"name="soyad"id="soyad" ></td>
+            </tr>
+            <tr>
+ 
+                <td colspan="2">
+                    KADIN<input type="radio"name="cinsiyet" id="cinsiyet"  value="kadın">
+                    ERKEK<input type="radio" name="cinsiyet" id="cinsiyet" value="erkek">
+                </td>
+            </tr>
+            <tr>
+                <td>YAŞ</td>
+                <td><input type="number" name="yas" id="yas" min="5" max="88"></td>
+            </tr>
+ 
+            <tr>
+                <td>MAİL:</td>
+                <td><input type="email" name="mail" id="mail"></td>
+            </tr>
+            <tr>
+                <td>Iletisime <br>geçme <br>sebebiniz:</td>
+                <td><input type="text" name="text" id="text" style="width: 200px; height: 60px;" ></td>
+            </tr>
+ 
+            <tr>
+                <td colspan="2">
+                    <input type="button" name="kaydet" id="kaydet" value="KAYDET" onclick="FormKontrol()">
+                    <input type="reset" name="sil" id="sil" value="TEMİZLE">
+                </td>
+            </tr>        
+        </table>    
+ 
+    </form>
+</body>
+ 
+</html>

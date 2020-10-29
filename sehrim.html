@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Şehrim</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <style>
+    .carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+  .display-1{
+    margin-left: auto;
+  }
+  .nav-bar{
+    z-index: 3;
+    position: fixed;
+    height: 75px;
+    width: 100%;
+    background-color: rgb(53, 124, 43);
+    display: inline;
+    float: left;
+    
+  }
+  nav{
+    padding-top: 24px;
+  }
+  a{
+    
+    padding-left: 20px;
+    float: left;
+    text-align: center;
+  }
+  h1{
+    padding-top: 100px;
+    text-align: center;
+  }
+  footer{
+    width: 100%;
+    text-decoration: white;
+    height: 60px;
+    background-color: rgb(53, 124, 43);
+}
+.footer-p{
+    padding-top: 20px;
+    color: white;
+    text-align: center;
+}
+  </style>
+</head>
+<body>
+    <div class="nav-bar ">
+        <nav class="nav-bar nav">
+            <a class="text-decoration-none" href="index.html">Anasayfa</a>
+        </nav>
+    </div>
+    <h1 class="display-1">Çorum</h1>
+        
+        <!-- The slideshow -->
+        <div class="container mt-3">
+
+          
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+              <li data-target="#myCarousel" data-slide-to="3"></li>
+            </ul>
+            
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <a href=https://www.kulturportali.gov.tr/turkiye/corum/gezilecekyer/corum-saat-kulesi>
+                <img src="saat-kulesi.jpg" alt="Saat kulesi ve meydan camii" width="1100" height="500"></a>
+                <div class="carousel-caption d-none d-md-block top">
+                  <h3>Saat Kulesi</h3>
+                  <p>Çorum/Merkez</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <a href=https://www.kulturportali.gov.tr/turkiye/corum/gezilecekyer/ncesu-kanyonu>
+                <img src="incesu-kanyonu.jpg" alt="incesu kanyonu" width="1100" height="500"></a>
+                <div class="carousel-caption d-none d-md-block">
+                  <h3>İncesu Kanyonu</h3>
+                  <p>Çorum/Ortaköy</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <a href=https://www.kulturportali.gov.tr/turkiye/corum/gezilecekyer/koyunbaba-koprusu>
+                <img src="koyunbabak.jpg" alt="koyunbaba köprüsü" width="1100" height="500"></a>
+                <div class="carousel-caption d-none d-md-block">
+                  <h3>Koyunbaba Köprüsü</h3>
+                  <p>Çorum/Osmancık</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <a href="https://www.corumtarihi.com/corum-ulu-camisi-murad-i-rabi-camisi/">
+                  <img src="ulucami.jpg" alt="Ulu cami" width="1100" height="500"></a>
+                <div class="carousel-caption d-none d-md-block">
+                  <h3>Ulu Camii</h3>
+                  <p>Çorum Merkez</p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+          </div>
+          
+          </div>
+        
+          <div id="accordion">
+            <div class="card">
+              <div class="card-header">
+                <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                  Saat Kulesi
+                </a>
+              </div>
+              <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                <div class="card-body">
+                 1894 yılında Yedi Sekiz Hasan Paşa tarafından yaptırılan kule 27,5 metre yüksekliğinde ve 3,9 metre çapındadır.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                İncesu Kanyonu
+              </a>
+              </div>
+              <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+                  İncesu Kanyonu, Ortaköy İlçesi İncesu Köyü'ndedir. Özellikle tek giriş ve çıkışı bulunan İncesu Kanyonu,12.5 kilometre uzunluğundadır. Genişliği 40-60 metre arasında değişmektedir.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                  Koyunbaba Köprüsü
+                </a>
+              </div>
+              <div id="collapseThree" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+                  Osmancık İlçe merkezinde Kızılırmak üzerinde bulunan Koyunbaba Köprüsü II. Beyazıt zamanında yapılmıştır. Yapımına 1484 yılında başlanmış, 1489 yılında tamamlanmıştır. Uzunluğu 250 m, genişliği 7,5 m olan köprü dikdörtgen kesitli sarı kesme taşlardan yapılmıştır. Sivri kemerli 19 gözlüdür.
+                </div>
+              </div>
+            </div>
+          </div> 
+          <div class="card">
+            <div class="card-header">
+              <a class="collapsed card-link" data-toggle="collapse" href="#collapseFour">
+              Ulu Camii
+            </a>
+            </div>
+            <div id="collapseFour" class="collapse" data-parent="#accordion">
+              <div class="card-body">
+                Muradi Rabi Ulu Cami'sinin Selçuklu Sultanı III. Alaaddin Keykubat zamanında, onun azatlı kölesi Hayrettin tarafından yaptırıldığı düşünülmektedir. Cami, bugünkü halini geçirdiği büyük onarımlar sonucu almıştır. II. Beyazıt zamanında 1446 tarihinde meydana gelen büyük depremde harap olmuş, Mimar Sinan tarafından onarılmıştır.
+              </div>
+            </div>
+          </div>
+          <div class="footer">
+            <footer>
+              <p class="footer-p">All right has reserved &copy;</p>
+            </footer>
+          </div>   
+    
+</body>
+</html>
